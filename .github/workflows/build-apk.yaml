@@ -18,7 +18,7 @@ jobs:
           node-version: 18
 
       - name: Install Capacitor
-        run: |
+        run: npm install @capacitor/android
           npm install @capacitor/core @capacitor/cli
           npx cap init mygame com.mygame.app --web-dir=www
           
