@@ -32,7 +32,6 @@ jobs:
 
       - name: Add Android & Copy Files
         run: |
-          npx cap add android
           npx cap copy
 
       - name: Setup Java & Gradle
