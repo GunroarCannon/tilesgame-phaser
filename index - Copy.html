@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #111;
+            color: white;
+            font-family: sans-serif;
+        }
+        #game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="game-container"></div>
+
+    <!-- Phaser CDN -->
+    <script src="phaser.min.js"></script>
+
+    <!-- Your Scenes -->
+    <script src="js/editor.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/menu.js"></script>
+
+    <!-- Game Config -->
+    <script>
+        const config = {
+            type: Phaser.AUTO,
+            width: 800,
+            height: 600,
+            orientation: Phaser.Scale.POTRAIT,
+            scale:{
+                mode:Phaser.Scale.FIT,
+                autoCenter: Phaser.Scale.CENTER_BOTH,
+                width: 1080,
+                height: 1920,
+            },
+            backgroundColor: '#222',
+            parent: 'game-container',
+            scene: [MenuScene,GameScene,EditorScene]
+        };
+
+        const game = new Phaser.Game(config);
+       // game.scene.start('EditorScene');
+    </script>
+</body>
+</html>

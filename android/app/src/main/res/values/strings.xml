@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">tilesgame</string>
+    <string name="title_activity_main">tilesgame</string>
+    <string name="package_name">om.hmmmgames.tilegamesdemo</string>
+    <string name="custom_url_scheme">om.hmmmgames.tilegamesdemo</string>
+</resources>

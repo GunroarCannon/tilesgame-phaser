@@ -1,0 +1,36 @@
+ HTML5/Phaser 3 project—a mobile-first rhythm game inspired by Magic Tiles/Piano Tiles, with a beatmap editor and playable game mode, all switchable via a unified interface:
+
+Project Overview
+A dual-mode Phaser 3 application consisting of:
+
+Beatmap Editor: A tool to create and export rhythm game tracks by manually mapping tiles to music. I dont know if th song loaded
+
+Playable Game: A responsive mobile-friendly rhythm game that loads beatmaps and challenges players to tap tiles in sync with music.
+
+Key Features:
+
+Editor Mode:
+
+Load any audio file (MP3/WAV) and manually place tiles (tap/hold) using keyboard (A/S/D/F) or touch.
+
+Real-time visual feedback (lanes highlight on input).
+
+Export beatmaps as JSON for use in the game.
+
+Test playback to verify sync.
+
+Game Mode:
+
+Loads beatmaps + music from assets/.
+
+Scoring system (+100 for hits, -50 for misses).
+
+Responsive design (works on mobile via touch or desktop via keys).
+
+Animated tile drops with smooth tweens.
+
+Unified Interface:
+
+Toggle between editor/game with buttons.
+
+Proper cleanup of Phaser instances to prevent memory leaks.
