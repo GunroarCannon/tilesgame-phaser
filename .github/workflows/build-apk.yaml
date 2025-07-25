@@ -40,6 +40,8 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
+      - name: Make gradlew executable
+        run: chmod +x android/gradlew
       - name: Build APK
         run: |
           cd android
