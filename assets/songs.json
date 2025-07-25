@@ -1,0 +1,18 @@
+[
+  {
+    "displayName": "Jingle Bells",
+    "artist": "James Lord Pierpont",
+    "musicPath": "assets/default.wav",
+    "beatmapPath": "assets/bt.json",
+    "levelRequired": 2,
+    "cost": 0
+  },
+  {
+    "displayName": "Canon",
+    "artist": "Johann Pachelbel",
+    "musicPath": "assets/songs/canon.wav",
+    "beatmapPath": "assets/beatmaps/canon.json",
+    "levelRequired": 3,
+    "cost": 0
+  }
+]
